@@ -1,0 +1,122 @@
+<html ng-app="wtt">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<!-- JQUERY -->
+		<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="/node_modules/bootstrap/js/modal.js"></script>
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+		<!-- STYLE.CSS -->
+		<link type="text/css" rel="stylesheet" href="../css/style.css">
+		<!-- ANGULAR.JS -->
+		<script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+		<!-- ANGULAR ROUTE -->
+		<script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
+		<!-- PROGRAM.JS -->
+		<script type="text/javascript" src="../js/index.js"></script>
+		<!-- MONTSERRAT FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	</head>
+	<body ng-controller="mainController">
+		<header class="wtt-header-fixed clearfix">
+			<div class="wtt-header-outer">
+				<div class="wtt-header">
+					<div class="wtt-header-sun"></div>
+					<div class="wtt-header-background"></div>
+					<a href="#home"><div class="wtt-header-grid" id="wtthgl"></div></a>
+					<div class="wtt-header-grid" id="wtthgm"></div>
+					<div class="wtt-header-grid" id="wtthgr">
+						<div class="inner-grid">
+							<div class="nav-item-con">
+								<h4>find a program</h4>
+							</div>
+						</div>
+						<div class="inner-grid">
+							<div class="nav-item-con">
+								<h4>how it works</h4>
+							</div>
+						</div>
+						<div class="inner-grid">
+							<div class="nav-item-con">
+								<h4>why us</h4>
+							</div>
+						</div>
+						<div class="inner-grid">
+							<a href="#enroll"><div class="nav-item-con">
+								<h4>enroll now</h4>
+							</div></a>
+						</div>
+						<div class="inner-grid">
+							<div class="nav-item-con">
+								<h4>talk to us</h4>
+							</div>
+						</div>
+						<div class="inner-grid">
+							<div class="nav-item-con" id="my-account" data-toggle="modal" data-target="#myAccountModal">
+								<i class="fa fa-user fa-3x" id="my-account-icon"></i>
+								<h5>my account</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div ng-view class="route-window"></div>
+<!-- Modal -->
+<div class="modal fade" id="myAccountModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Being developed. Check back soon.</h2>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
