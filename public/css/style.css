@@ -5,7 +5,9 @@ body {
 /*****************************
 HOMEPAGE
 *****************************/
-
+.modal-dialog {
+	width: 80%;
+}
 
 /*------------------------------------------------------------------
 COLORS -------------------------------------------------------------
@@ -1019,9 +1021,24 @@ label {
 	text-align: center;
 }
 
-
-
-
+.centered-form-item.f {
+	width: 100%!important;
+}
+.tandc4.l, .tandc5.l {
+	padding-left: 15px;
+}
+.important.l {
+	background-color: white;
+}
+.aid {
+	transform: scale(2)!important;
+    -ms-transform: scale(2)!important;
+    -webkit-transform: scale(2)!important;
+	margin: auto!important;
+}
+label > span {
+	font-size: 12px!important;
+}
 
 
 

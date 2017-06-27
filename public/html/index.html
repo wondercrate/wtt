@@ -71,10 +71,28 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title" id="myModalLabel">Being developed. Check back soon.</h2>
+        <h2 class="modal-title" id="myModalLabel" ng-click="testing()">Being developed. Check back soon.</h2>
       </div>
       <div class="modal-body">
-        ...
+      	<form action="/auth/login" method="post">
+	    	<div class="centered-form-item clearfix">
+				<div class="group">      
+					<input type="text" class="form-input" name="travelerPrimaryEmail" ng-model="test">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Email</label>
+				</div>
+			</div>
+			<div class="centered-form-item clearfix">
+				<div class="group">      
+					<input type="text" class="form-input" name="travelerPassword">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Password</label>
+				</div>
+			</div>
+			<button class="btn btn-default" type="submit">Login</button>
+		</form>
       </div>
       <div class="modal-footer">
       </div>
