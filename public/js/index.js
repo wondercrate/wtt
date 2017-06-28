@@ -20,6 +20,9 @@ angular.module('wtt').controller('mainController', ['$scope', '$http', function(
 		$scope.isCustom = function() {
 			return $scope.traveler.travelerProgramType == "Custom Group Travel";
 		}
+		$scope.isCustoml = function() {
+			return $scope.traveler.travelerProgramType !== "Custom Group Travel" && $scope.traveler.travelerProgramType !== undefined;
+		}
 		$scope.belizePrograms = [
 			{
 				name: '2017 Belize 10 Day Marine Conservation Expedition',

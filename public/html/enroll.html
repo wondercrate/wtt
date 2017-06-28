@@ -141,7 +141,7 @@
 						<input type="text" class="form-input" name="travelerBirthdate" ng-model="traveler.travelerBirthdate" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
-						<label>Birthdate <span>(ex: August 23, 1995)</span></label>
+						<label>Birthdate <span>(MM/DD/YYYY)</span></label>
 					</div>
 				</div>
 			</div>
@@ -510,6 +510,8 @@
 				<label>Non-US STATE</label>
 			</div>
 		</div>
+		<h1>Additional Traveler Info</h1>
+		<div class="form-sep clearfix"></div>
 		<div class="form-item-grid-2-con clearfix">
 			<div class="form-item-grid-2 clearfix">
 				<div class="form-item-grid-2-inner clearfix">
@@ -526,6 +528,7 @@
 					<div class="group">
 						<select class="form-input select" name="travelerTshirtSize" ng-model="traveler.travelerTshirtSize" required>
 			  				<option value="" selected data-default id="select-default"></option>
+			  				<option>XS</option>
 			  				<option>S</option>
 			  				<option>M</option>
 			  				<option>L</option>
@@ -545,10 +548,9 @@
 					<div class="group">
 						<select class="form-input select" name="travelerCanSwim" ng-model="traveler.travelerCanSwim" required>
 					  		<option value="" selected data-default id="select-default"></option>
-					  		<option>None</option>
-		  					<option>Beginner</option>
-		  					<option>Intermediate</option>
-		  					<option>Advanced</option>
+					  		<option>I don’t know how to swim</option>
+		  					<option>I’m a decent swimmer</option>
+		  					<option>I swim like Michael Phelps</option>
 				  		</select>
 			  			<span class="highlight"></span>
 						<span class="bar"></span>
@@ -576,7 +578,7 @@
 				<textarea type="text" class="form-input text-area" name="travelerInterests" ng-model="traveler.travelerInterests" required></textarea>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>What are your hobies or interests?</label>
+				<label>What are your hobbies or interests?</label>
 			</div>
 		</div>
 		<input type="button" name="next" class="next action-button" value="Next" />
@@ -662,7 +664,7 @@
 			</div>
 		</div>
 		<div class="important clearfix">
-			<h3>EMERGENCY CONTACT</h3>
+			<h1>EMERGENCY CONTACT</h1>
 			<h4>In case of an emergency, both guardians will be contacted. If we cannot reach either guardian, we will reach out to the emergency contact listed below.</h4>
 		</div>
 		<div class="form-item-grid-3-con clearfix">
@@ -730,7 +732,7 @@
 			</div>
 		</div>
 		<div class="important clearfix">
-			<h3>MEDICAL CARE RELEASE</h3>
+			<h1>MEDICAL CARE RELEASE</h1>
 			<h4>Given the nature of our programs, there is a remote possibillity that an emergency necessitating medical treatment could arise. Should this occur, Walking Tree Travel (WTT) will make every possible effort to contact the emergency contact listed on this form and listed guardians. WTT leaders have international cellular phones and will try and reach the Guardians or Emergency Contact so that they are informed and can direct the treatment process. However, it is impossible to guarentee that WTT staff will be able to make timely contact; thus, all Guardians are required to sign the following statement so that emergency treatment can be obtained as soon as possible. By checking this box, you hereby agree and consent to the forementioned terms and conditions.</h4>
 			<div class="centered-form-item checkbox clearfix">
 				<input type="checkbox" class="checkbox"/>
@@ -1040,6 +1042,13 @@
 			</div>
 		</div>
 		<div class="important clearfix">
+			<h1>PASSPORT DISCLOSURE</h1>
+			<h4>I the (Guardian) understand that the participant is responsible for his/her own passports during the program and agree to pay any and all fees associated with passport replacement, lost or stolen passports or misplaced passports.</h4>
+			<div class="centered-form-item checkbox clearfix">
+				<input type="checkbox" class="checkbox"/>
+			</div>
+		</div>
+		<div class="important clearfix">
 			<h4>By checking this box, I hereby confirm that the information provided above is complete and accurate.</h4>
 			<div class="centered-form-item checkbox clearfix">
 				<input type="checkbox" class="checkbox"/>
@@ -1095,36 +1104,6 @@
 				<input type="checkbox" class="checkbox"/>
 			</div>
 		</div>
-		<div class="form-item-grid-2-con clearfix">
-			<div class="form-item-grid-2 clearfix">
-				<div class="form-item-grid-2-inner clearfix">
-					<div class="group">      
-						<input type="text" class="form-input" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Guardian 1 Signature <span>(Full Name)</span></label>
-					</div>
-				</div>
-			</div>
-			<div class="form-item-grid-2 clearfix">
-				<div class="form-item-grid-2-inner clearfix">
-					<div class="group">      
-						<input type="text" class="form-input" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Guardian 2 Signature <span>(Full Name)</span></label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="centered-form-item clearfix">
-			<div class="group">      
-				<input type="text" class="form-input" name="travelerFullName" required>
-				<span class="highlight"></span>
-				<span class="bar"></span>
-				<label>Participant Signature <span>(Full Name)</span></label>
-			</div>
-		</div>
 		<h4 class="tandc4">Acknowledgement of Risk and Agreement of Release:</h4>
 		<h6 class="tandc5">We, the undersigned, are the participant applying to participate in a program offered by Walking Tree Travel (the "Participant"), and the
 		Participant’s parents or guardians ("Parents;" Participant and Parents are collectively referred to as "we," "us,"or "our").We are
@@ -1167,17 +1146,47 @@
 		pursuant to the Commercial Arbitration Rules of the American Arbitration Association. Judgment on the award rendered by the arbitrator
 		may be entered in the District Court for the City and County of Denver, Colorado.</h6>
 		<div class="important clearfix">
-			<h3>GUARDIAN(S)</h3>
+			<h1>GUARDIAN(S)</h1>
 			<h4>I have read and am in agreement to the Acknowledgement of Risk and Agreement of Release.</h4>
 			<div class="centered-form-item checkbox clearfix">
 				<input type="checkbox" class="checkbox"/>
 			</div>
 		</div>
 		<div class="important clearfix">
-			<h3>PARTICIPANT</h3>
+			<h1>PARTICIPANT</h1>
 			<h4>I have read and am in agreement to the Acknowledgement of Risk and Agreement of Release.</h4>
 			<div class="centered-form-item checkbox clearfix">
 				<input type="checkbox" class="checkbox"/>
+			</div>
+		</div>
+		<div class="form-item-grid-2-con clearfix">
+			<div class="form-item-grid-2 clearfix">
+				<div class="form-item-grid-2-inner clearfix">
+					<div class="group">      
+						<input type="text" class="form-input" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Guardian 1 Signature <span>(Full Name)</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="form-item-grid-2 clearfix">
+				<div class="form-item-grid-2-inner clearfix">
+					<div class="group">      
+						<input type="text" class="form-input" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Guardian 2 Signature <span>(Full Name)</span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="centered-form-item clearfix">
+			<div class="group">      
+				<input type="text" class="form-input" name="travelerFullName" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Participant Signature <span>(Full Name)</span></label>
 			</div>
 		</div>  
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -1198,26 +1207,12 @@
 				<span class="bar"></span>
 			</div>
 		</div>
-		<div class="form-item-grid-2-con clearfix" ng-show="isCustom()">
-			<div class="form-item-grid-2 clearfix">
-				<div class="form-item-grid-2-inner clearfix">
-					<div class="group">      
-						<input type="text" class="form-input" name="travelerTeacherEmail" ng-model="traveler.travelerTeacherEmail" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Teacher Email</label>
-					</div>
-				</div>
-			</div>
-			<div class="form-item-grid-2 clearfix">
-				<div class="form-item-grid-2-inner clearfix">
-					<div class="group">      
-						<input type="text" class="form-input" name="travelerSchool" ng-model="traveler.travelerSchool" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>School</label>
-					</div>
-				</div>
+		<div class="centered-form-item clearfix" ng-show="isCustom()">
+			<div class="group">      
+				<input type="text" class="form-input" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Teacher Email</label>
 			</div>
 		</div>
 		<div class="centered-form-item clearfix" ng-show="programTypeSelected()">
@@ -1332,7 +1327,7 @@
 				<label>Promo Code</label>
 			</div>
 		</div>
-		<div class="important l clearfix">
+		<div class="important l clearfix" ng-show="isCustoml()">
 			<h4 style="color: black;">Please check the box if you are applying for financial aid.</h4>
 			<div class="centered-form-item checkbox clearfix">
 				<input type="checkbox" class="aid"/>
