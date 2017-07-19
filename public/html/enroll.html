@@ -112,14 +112,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="centered-form-item clearfix">
+		<!-- <div class="centered-form-item clearfix">
 			<div class="group">      
 				<input type="text" class="form-input" name="travelerPassword" ng-model="traveler.travelerPassword" required>
 				<span class="highlight"></span>
 				<span class="bar"></span>
-				<label>Create Password for Account</label>
+				<label>Password</label>
 			</div>
-		</div>
+		</div> -->
 		<div class="form-item-grid-2-con clearfix">
 			<div class="form-item-grid-2 clearfix">
 				<div class="form-item-grid-2-inner clearfix">
@@ -128,10 +128,11 @@
 			  				<option value="" selected data-default id="select-default"></option>
 			  				<option>Male</option>
 			  				<option>Female</option>
+			  				<option>Non-Binary</option>
 		  				</select>
 	  					<span class="highlight"></span>
 						<span class="bar"></span>
-						<label>Gender</label>
+						<label>Sex</label>
 					</div>
 				</div>
 			</div>
@@ -157,6 +158,18 @@
 					</div>
 				</div>
 			</div>
+			<div class="form-item-grid-2 clearfix">
+				<div class="form-item-grid-2-inner clearfix">
+					<div class="group">      
+						<input type="text" class="form-input" name="travelerCity" ng-model="traveler.travelerCity" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>City</label>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="form-item-grid-2-con clearfix">
 			<div class="form-item-grid-2 clearfix">
 				<div class="form-item-grid-2-inner clearfix">
 					<div class="group">
@@ -217,18 +230,6 @@
 	  					<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>State</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="form-item-grid-2-con clearfix">
-			<div class="form-item-grid-2 clearfix">
-				<div class="form-item-grid-2-inner clearfix">
-					<div class="group">      
-						<input type="text" class="form-input" name="travelerCity" ng-model="traveler.travelerCity" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>City</label>
 					</div>
 				</div>
 			</div>
@@ -581,7 +582,7 @@
 				<label>What are your hobbies or interests?</label>
 			</div>
 		</div>
-		<input type="button" name="next" class="next action-button" value="Next" />
+		<input type="button" name="next" class="next action-button back-to-top" value="Next" />
 	</fieldset>
 	<fieldset>
 		<h1>Guardian Information</h1>
@@ -707,8 +708,8 @@
 				<label>Relationship to participant</label>
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" name="next" class="next action-button" value="Next" />
+		<input type="button" name="previous" class="previous action-button back-to-top" value="Previous" />
+		<input type="button" name="next" class="next action-button back-to-top" value="Next" />
 	</fieldset>
 	<fieldset>
 		<h1>Medical Disclosure</h1>
@@ -1144,8 +1145,8 @@
 				<label>Participant Signature <span>(Full Name)</span></label>
 			</div>
 		</div>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" class="next action-button" value="next"/>
+		<input type="button" name="previous" class="previous action-button back-to-top" value="Previous" />
+		<input type="button" class="next action-button back-to-top" value="next"/>
 	</fieldset>
 	<fieldset>
 		<h1>Terms and Conditions</h1>
@@ -1339,8 +1340,8 @@
 				<label>Participant Signature <span>(Full Name)</span></label>
 			</div>
 		</div>  
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<input type="button" class="next action-button" value="next"/>
+		<input type="button" name="previous" class="previous action-button back-to-top" value="Previous" />
+		<input type="button" class="next action-button back-to-top" value="next"/>
 	</fieldset>
 	<fieldset>
 		<h1>Program Selection</h1>

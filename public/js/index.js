@@ -480,6 +480,10 @@ angular.module('wtt').controller('mainController', ['$scope', '$http', function(
 angular.module('wtt') 
 	.controller('formController', [ '$scope', '$http', function($scope, $http) {
 		$(document).ready(function() {
+		var $backToTop = $(".back-to-top");
+		$backToTop.on("click", function(e) {
+		  $("html, body").animate({ scrollTop: 400 }, 1000);
+		});
 		  var current_fs, next_fs, previous_fs; 
 		  var left, opacity, scale; 
 		  var animating; 
