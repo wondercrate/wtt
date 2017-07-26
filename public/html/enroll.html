@@ -3,7 +3,9 @@
 	<h4>Congratulations on your decision to join one of our adventures! The following enrollment form will take about ten minutes to complete and will require the presence of both the participant and guardian as well as either a check or credit card to complete. Please call 303-242-8541 if you have any questions or issues with this form. We are happy to help.</h4>
 </div>
 <div class="wtt-enroll-form-con clearfix">
-<form id="msform" class="clearfix" novalidate>
+<form id="msform" class="clearfix" novalidate method="POST" action="https://creator.zoho.com/api/zoho_lacey21/json/CRM-Creator-Integration/form/Integration_Form/record/add/">
+<input type="hidden" name ="authtoken" value="eaf59ebcf14312250f19781ae0e16c57">
+	<input type="hidden" name ="scope" id="scope" value="creatorapi">
 	<div class="prog-wrap">
 		<ul id="progressbar">
 			<li class="active">Traveler Info</li>
@@ -32,7 +34,7 @@
 			<div class="form-item-grid-3 clearfix">
 				<div class="form-item-grid-3-inner clearfix">
 					<div class="group">      
-						<input type="text" class="form-input" name="travelerFirstName" ng-model="traveler.travelerFirstName" required>
+						<input type="text" class="form-input" name="First_Name" ng-model="traveler.travelerFirstName" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>First Name</label>
@@ -42,7 +44,7 @@
 			<div class="form-item-grid-3 clearfix">
 				<div class="form-item-grid-3-inner clearfix">
 					<div class="group">      
-						<input type="text" class="form-input" name="travelerMiddleName" ng-model="traveler.travelerMiddleName" required>
+						<input type="text" class="form-input" name="Lead_Name" ng-model="traveler.travelerMiddleName" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Middle Name</label>
@@ -52,7 +54,7 @@
 			<div class="form-item-grid-3 l clearfix">
 				<div class="form-item-grid-3-inner clearfix">
 					<div class="group">      
-						<input type="text" class="form-input" name="travelerLastName" ng-model="traveler.travelerLastName" required>
+						<input type="text" class="form-input" name="Last_Name" ng-model="traveler.travelerLastName" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Last Name</label>
@@ -94,7 +96,7 @@
 			<div class="form-item-grid-2 clearfix">
 				<div class="form-item-grid-2-inner clearfix">
 					<div class="group">      
-						<input type="text" class="form-input" name="travelerPrimaryEmail" ng-model="traveler.travelerPrimaryEmail" required>
+						<input type="text" class="form-input" name="Email" ng-model="traveler.travelerPrimaryEmail" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Primary Email</label>
@@ -581,7 +583,7 @@
 				<label>What are your hobbies or interests?</label>
 			</div>
 		</div>
-		<input type="button" name="next" class="next action-button back-to-top" value="Next" />
+		<input type="submit" name="next" class="next action-button back-to-top" value="Next" />
 		<p style="font-style: italic; font-size: 10px; font-color:">Smithsonian Student Adventures is operated by Walking Tree Travel under license from the Smithsonian Institution. The name of the Smithsonian and the sunburst logo are registered trademarks of the Smithsonian Institution and Walking Tree Travel is an authorized user. Walking Tree Travel and Smithsonian Student Adventures will be referred to collectively as WTT throughout this enrollment form.</p>
 	</fieldset>
 	<fieldset>
