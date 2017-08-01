@@ -18,10 +18,10 @@ angular.module('wtt').controller('mainController', ['$scope', '$http', function(
 			return $scope.destination.selected !== undefined;
 		}
 		$scope.isCustom = function() {
-			return $scope.traveler.travelerProgramType == "Custom Group Travel";
+			return $scope.traveler.travelerProgramType == "Custom Enrollment";
 		}
 		$scope.isCustoml = function() {
-			return $scope.traveler.travelerProgramType !== "Custom Group Travel" && $scope.traveler.travelerProgramType !== undefined;
+			return $scope.traveler.travelerProgramType !== "Custom Enrollment" && $scope.traveler.travelerProgramType !== undefined;
 		}
 		$scope.belizePrograms = [
 			{
