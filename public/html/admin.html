@@ -1,0 +1,127 @@
+<html ng-app="wtt">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<!-- JQUERY -->
+		<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="/node_modules/bootstrap/js/modal.js"></script>
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+		<!-- STYLE.CSS -->
+		<link type="text/css" rel="stylesheet" href="../css/admin.css">
+		<!-- ANGULAR.JS -->
+		<script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+		<!-- ANGULAR ROUTE -->
+		<script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
+		<!-- PROGRAM.JS -->
+		<script type="text/javascript" src="../js/admin.js"></script>
+		<!-- MONTSERRAT FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+	</head>
+	<body ng-controller="mainController">
+		<a href="/wtt/">logout</a>
+		<h1>Add Programs</h1>
+		<form>
+			<input class="form-control" ng-model="program.name" type="text" placeholder="Program name.."/>
+			<input class="form-control" ng-model="program.country" type="text" placeholder="Program country.."/>
+			<input class="form-control" ng-model="program.duration" type="text" placeholder="Program duration.."/>
+			<input class="form-control" ng-model="program.price" type="text" placeholder="Program cost.."/>
+			<button class="btn btn-success submit-btn" ng-click="addProgram(program)" type="submit">Submit</button>
+		</form>
+		<div class="programs-con clearfix">
+			<div class="container">
+				<div class="programs" ng-repeat="program in programsArray">
+					<div class="programs-grid-titles clearfix">
+						<h3>{{program.name}}</h3>
+						<button class="btn btn-default edit-btn" data-toggle="modal" data-target="#editModal" ng-click="pushProgram(program)">Edit</button>
+						<div class="programs-grid-inner">
+							<h4>Country</h4>
+						</div>
+						<div class="programs-grid-inner">
+							<h4>Duration</h4>
+						</div>
+						<div class="programs-grid-inner">
+							<h4>$Cost</h4>
+						</div>
+					</div>
+					<div class="divider clearfix"></div>
+					<div class="programs-grid-info clearfix">
+						<div class="programs-grid-inner">
+							<h5>{{program.country}}</h5>
+						</div>
+						<div class="programs-grid-inner">
+							<h5>{{program.duration}}</h5>
+						</div>
+						<div class="programs-grid-inner">
+							<h5>{{program.price}}</h5>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-repeat="program in singleProgramArray">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">{{program.name}}</h4>
+					      </div>
+					      <div class="modal-body">
+					        <h5>Name</h5>
+					        <input class="form-control" ng-model="program.name" placeholder="{{program.name}}">
+					        <h5>Country</h5>
+					        <input class="form-control" ng-model="program.country" placeholder="{{program.country}}">
+					        <h5>duration</h5>
+					        <input class="form-control" ng-model="program.duration" placeholder="{{program.duration}}">
+					        <h5>$Cost</h5>
+					        <input class="form-control" ng-model="program.price" placeholder="{{program.price}}">
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="updateProgram()">Save changes</button>
+					        <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="deleteProgram(program._id)">Delete</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
